@@ -5137,7 +5137,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".container[data-v-f93c3986] {\n  margin-top: 26px;\n}\n.container > .navbar[data-v-f93c3986] {\n  display: flex;\n  align-items: center;\n  padding: 0 14px;\n  height: 60px;\n  border-radius: 20px;\n  background: #e3f2fd;\n}\n.container > .navbar > .search[data-v-f93c3986] {\n  display: flex;\n  height: 40px;\n  background: white;\n  border-radius: 6px;\n  margin-left: 16px;\n  overflow: hidden;\n  flex: 1;\n  align-items: center;\n}\n.container > .navbar > .search > svg[data-v-f93c3986], .container > .navbar > .search input[data-v-f93c3986] {\n  color: #2196f3;\n}\n.container > .navbar > .search > svg[data-v-f93c3986] {\n  margin: 0 15px;\n}\n.container > .navbar > .search > input[data-v-f93c3986] {\n  outline: 0;\n  flex: 1;\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  font-weight: 400;\n  font-size: 16px;\n  border: 0;\n}\n.container > .navbar > .btn.logoutin[data-v-f93c3986] {\n  margin-left: 8px;\n}\n.container > .content[data-v-f93c3986] {\n  margin-top: 20px;\n  flex: 1;\n}", ""]);
+exports.push([module.i, ".container[data-v-f93c3986] {\n  margin-top: 26px;\n}\n.container > .navbar[data-v-f93c3986] {\n  display: flex;\n  align-items: center;\n  padding: 0 14px;\n  height: 60px;\n  min-height: 60px;\n  border-radius: 20px;\n  background: #e3f2fd;\n}\n.container > .navbar > .search[data-v-f93c3986] {\n  display: flex;\n  height: 40px;\n  background: white;\n  border-radius: 6px;\n  margin-left: 16px;\n  overflow: hidden;\n  flex: 1;\n  align-items: center;\n}\n.container > .navbar > .search > svg[data-v-f93c3986], .container > .navbar > .search input[data-v-f93c3986] {\n  color: #2196f3;\n}\n.container > .navbar > .search > svg[data-v-f93c3986] {\n  margin: 0 15px;\n}\n.container > .navbar > .search > input[data-v-f93c3986] {\n  outline: 0;\n  flex: 1;\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  font-weight: 400;\n  font-size: 16px;\n  border: 0;\n}\n.container > .navbar > .btn.logoutin[data-v-f93c3986] {\n  margin-left: 8px;\n}\n.container > .content[data-v-f93c3986] {\n  margin-top: 20px;\n  flex: 1;\n}", ""]);
 
 // exports
 
@@ -6454,6 +6454,9 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 let TweetComponent = class TweetComponent extends vue_property_decorator__WEBPACK_IMPORTED_MODULE_0__["Vue"] {
 };
+__decorate([
+    Object(vue_property_decorator__WEBPACK_IMPORTED_MODULE_0__["Prop"])({ default: {} })
+], TweetComponent.prototype, "data", void 0);
 TweetComponent = __decorate([
     vue_property_decorator__WEBPACK_IMPORTED_MODULE_0__["Component"]
 ], TweetComponent);
@@ -6472,7 +6475,8 @@ TweetComponent = __decorate([
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_property_decorator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue-property-decorator */ "./node_modules/vue-property-decorator/lib/vue-property-decorator.js");
-/* harmony import */ var _components_tweet_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/tweet.vue */ "./resources/js/templates/components/tweet.vue");
+/* harmony import */ var vuex__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vuex */ "./node_modules/vuex/dist/vuex.esm.js");
+/* harmony import */ var _components_tweet_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/tweet.vue */ "./resources/js/templates/components/tweet.vue");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -6481,11 +6485,18 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 };
 
 
+
 let IndexTemplate = class IndexTemplate extends vue_property_decorator__WEBPACK_IMPORTED_MODULE_0__["Vue"] {
+    created() {
+        this.$store.dispatch("tweets/getTweets");
+    }
 };
 IndexTemplate = __decorate([
     Object(vue_property_decorator__WEBPACK_IMPORTED_MODULE_0__["Component"])({
-        components: { tweet: _components_tweet_vue__WEBPACK_IMPORTED_MODULE_1__["default"] }
+        components: { tweet: _components_tweet_vue__WEBPACK_IMPORTED_MODULE_2__["default"] },
+        computed: {
+            ...Object(vuex__WEBPACK_IMPORTED_MODULE_1__["mapState"])("tweets", { tweets: "data" })
+        }
     })
 ], IndexTemplate);
 /* harmony default export */ __webpack_exports__["default"] = (IndexTemplate);
@@ -6990,38 +7001,29 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
-}
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "tweet box c-column" }, [
-      _c("div", { staticClass: "header c-row" }, [
-        _c("img", {
-          attrs: {
-            src:
-              "https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/10_avatar-64.png",
-            alt: ""
-          }
-        }),
-        _vm._v(" "),
-        _c("div", { staticClass: "c-column" }, [
-          _c("span", { staticClass: "name" }, [_vm._v("John Travolta")]),
-          _vm._v(" "),
-          _c("span", { staticClass: "job" }, [_vm._v("Diseñador Grafico")])
-        ])
-      ]),
+  return _c("div", { staticClass: "tweet box c-column" }, [
+    _c("div", { staticClass: "header c-row" }, [
+      _c("img", {
+        attrs: {
+          src:
+            "https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/10_avatar-64.png",
+          alt: ""
+        }
+      }),
       _vm._v(" "),
-      _c("span", [
-        _vm._v(
-          "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio earum eum culpa totam sed blanditiis, fugit provident molestias ut, ex et dicta iste, debitis dolorum nisi! Quibusdam asperiores exercitationem enim."
-        )
+      _c("div", { staticClass: "c-column" }, [
+        _c("span", { staticClass: "name" }, [
+          _vm._v(_vm._s(_vm.data.user.username))
+        ]),
+        _vm._v(" "),
+        _c("span", { staticClass: "job" }, [_vm._v("Trabajador freelance")])
       ])
-    ])
-  }
-]
+    ]),
+    _vm._v(" "),
+    _c("span", { domProps: { textContent: _vm._s(_vm.data.content) } })
+  ])
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -7066,7 +7068,14 @@ var render = function() {
     _vm._v(" "),
     _vm._m(0),
     _vm._v(" "),
-    _c("div", { staticClass: "tweets-container c-column" }, [_c("tweet")], 1)
+    _c(
+      "div",
+      { staticClass: "tweets-container c-column" },
+      _vm._l(_vm.tweets, function(tweet) {
+        return _c("tweet", { key: tweet.id, attrs: { data: tweet } })
+      }),
+      1
+    )
   ])
 }
 var staticRenderFns = [
@@ -25996,9 +26005,59 @@ __webpack_require__.r(__webpack_exports__);
 vue__WEBPACK_IMPORTED_MODULE_0__["default"].use(vuex__WEBPACK_IMPORTED_MODULE_1__["default"]);
 /* harmony default export */ __webpack_exports__["default"] = (new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
     modules: {
-        user: __webpack_require__(/*! ./user */ "./resources/js/store/user.ts").default
+        user: __webpack_require__(/*! ./user */ "./resources/js/store/user.ts").default,
+        tweets: __webpack_require__(/*! ./tweets */ "./resources/js/store/tweets.ts").default
     }
 }));
+
+
+/***/ }),
+
+/***/ "./resources/js/store/tweets.ts":
+/*!**************************************!*\
+  !*** ./resources/js/store/tweets.ts ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var vuex_module_decorators__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex-module-decorators */ "./node_modules/vuex-module-decorators/dist/esm/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+let Tweets = class Tweets extends vuex_module_decorators__WEBPACK_IMPORTED_MODULE_0__["VuexModule"] {
+    constructor() {
+        super(...arguments);
+        this.data = [];
+    }
+    loadTweets(data) {
+        this.data = data;
+    }
+    async getTweets() {
+        let { data } = await axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/tweets");
+        return data.data;
+    }
+};
+__decorate([
+    vuex_module_decorators__WEBPACK_IMPORTED_MODULE_0__["Mutation"]
+], Tweets.prototype, "loadTweets", null);
+__decorate([
+    Object(vuex_module_decorators__WEBPACK_IMPORTED_MODULE_0__["Action"])({ commit: "loadTweets" })
+], Tweets.prototype, "getTweets", null);
+Tweets = __decorate([
+    Object(vuex_module_decorators__WEBPACK_IMPORTED_MODULE_0__["Module"])({
+        namespaced: true
+    })
+], Tweets);
+/* harmony default export */ __webpack_exports__["default"] = (Tweets);
 
 
 /***/ }),

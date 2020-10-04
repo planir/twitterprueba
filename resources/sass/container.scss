@@ -15,6 +15,10 @@ body {
     }
 }
 
+body {
+    overflow: auto;
+}
+
 .c-row {
     display: flex;
     flex-direction: row;

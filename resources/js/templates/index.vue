@@ -17,19 +17,26 @@
 
         <!-- Caja que contiene todos los tweets publicados. -->
         <div class="tweets-container c-column">
-            <tweet />
+            <tweet v-for="tweet in tweets" :key="tweet.id" :data="tweet" />
         </div>
     </div>
 </template>
 
 <script lang="ts">
     import {Vue, Component} from "vue-property-decorator";
+    import {mapState} from "vuex";
     import tweet from "./components/tweet.vue";
 
     @Component({
-        components: {tweet}
+        components: {tweet},
+        computed: {
+            ...mapState("tweets", {tweets: "data"})
+        }
     })
     export default class IndexTemplate extends Vue {
+        created() {
+            this.$store.dispatch("tweets/getTweets");
+        }
     }
 </script>
 

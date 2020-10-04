@@ -5,22 +5,22 @@
         <div class="header c-row">
             <img src="https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/10_avatar-64.png" alt="">
             <div class="c-column">
-                <span class="name">John Travolta</span>
-                <span class="job">Diseñador Grafico</span>
+                <span class="name">{{data.user.username}}</span>
+                <span class="job">Trabajador freelance</span>
             </div>
         </div>
                 
         <!-- Tweet content -->
-        <span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio earum eum culpa totam sed blanditiis, fugit provident molestias ut, ex et dicta iste, debitis dolorum nisi! Quibusdam asperiores exercitationem enim.</span>
+        <span v-text="data.content"/>
     </div>
 </template>
 
 <script lang="ts">  
-    import {Vue, Component} from "vue-property-decorator";
+    import {Vue, Component, Prop} from "vue-property-decorator";
 
     @Component
     export default class TweetComponent extends Vue {
-        
+        @Prop({default: {}}) readonly data: any
     }
 </script>
 

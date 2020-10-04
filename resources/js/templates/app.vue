@@ -64,6 +64,7 @@
             align-items: center;
             padding: 0 14px;
             height: 60px;
+            min-height: 60px;
             border-radius: 20px;
             background: #e3f2fd;
 
