@@ -11,4 +11,22 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.ts('resources/js/app.ts', 'public/js');
+mix.ts('resources/js/app.ts', 'public/js')
+    .sass('resources/sass/app.scss', 'public/css')
+    .webpackConfig({
+        module: {
+          rules: [
+            {
+              test: /\.scss$/,
+              use: [{
+                  loader: 'sass-resources-loader',
+                  options: {
+                    resources: [
+                        './resources/sass/variables.scss'
+                    ]
+                  },
+                },
+              ],
+            },
+          ],
+    }});

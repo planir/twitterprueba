@@ -1,0 +1,93 @@
+$button-border: $color-600;
+$button-color: white;
+$button-background: $color-500;
+
+a {
+    color: $color-500;
+    text-decoration: none;
+
+    &:hover {
+        color: $color-700;
+    }
+}
+
+.btn {
+    padding: 6px;
+    font-weight: 500;
+    font-size: 14px;
+    cursor: pointer;
+    border: 2px solid $button-border;
+    background: $button-background;
+    border-radius: 5px;
+    outline: 0;
+    color: $button-color;
+    text-decoration: none;
+    transition: 0.25s;
+    
+    &.icon {
+        font-size: 18px;
+        border-radius: 50%;
+        padding: 5px 6px;
+    }
+    
+    
+    &:hover {
+        border-color: white;
+        color: white;
+    }
+    
+    &[disabled] {
+        cursor: not-allowed;
+        
+        &:hover {
+            border-color: $button-border !important;
+            color: $button-color !important;
+        }
+    }
+
+    &.small {
+        padding: 3px 8px;
+    }
+
+    &.color {
+        color: white;
+        border: 0;
+
+        &.green {
+            background: $color-green;
+
+            &:hover {
+                background: darken($color-green, 4);
+            }
+
+            &:active {
+                background: darken($color-green, 8);
+            }
+        }
+
+        &.red {
+            background: $color-red;
+
+            &:hover {
+                background: darken($color-red, 4);
+            }
+
+            &:active {
+                background: darken($color-red, 8);
+            }
+        }
+
+        &.blue {
+            background: $color-blue;
+
+            &:hover {
+                background: darken($color-blue, 4);
+            }
+
+            &:active {
+                background: darken($color-blue, 8);
+            }
+        }
+
+    }
+}

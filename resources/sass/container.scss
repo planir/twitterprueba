@@ -1,0 +1,52 @@
+html, 
+body {
+    height: 100%;
+    background: #f6fbff;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+    > .container {
+        max-width: 600px;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.c-row {
+    display: flex;
+    flex-direction: row;
+    
+    &.v-center {
+        align-items: center;
+    }
+    
+    &.h-center {
+        justify-content: center;
+    }
+}
+
+.c-column {
+    display: flex;
+    flex-direction: column;
+
+    &.v-center {
+        justify-content: center;
+    }
+    
+    &.h-center {
+        align-items: center;
+    }
+}
+
+.full {
+    &-width {
+        width: 100%;
+    }
+
+    &-height {
+        height: 100%;
+    }
+}
