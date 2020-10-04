@@ -7,19 +7,53 @@
             <router-link class="btn icon" to="/">
                 <font-awesome-icon icon="home" fixed-width />
             </router-link>
+
             <!-- Search input -->
             <div class="search">
                 <font-awesome-icon icon="search"/>
                 <input type="text" placeholder="Buscador"/>
             </div>
-            <!-- Home button -->
-            <router-link class="btn icon logout" to="/login">
-                <font-awesome-icon icon="sign-out-alt" fixed-width />
-            </router-link>
+
+            <!-- Log out/in button -->
+            <button @click="logFunction" class="btn icon logoutin">
+                <font-awesome-icon :icon="'sign-' + (logged ? 'out' : 'in') + '-alt'" fixed-width />
+            </button>
         </div>
         <router-view></router-view>
     </div>
 </template>
+
+<script lang="ts">
+    import {Vue, Component} from "vue-property-decorator";
+    import {mapGetters} from "vuex";
+
+    @Component({
+        computed: {
+            ...mapGetters("user", [
+                "logged"
+            ])
+        }
+    })
+    export default class AppTemplate extends Vue {
+        logged: boolean
+        
+        /**
+         * 
+         */
+        async logFunction() {
+            if(!this.logged) return this.$router.push("/login");
+
+            try {
+                await this.$http.post("/auth/logout");  
+                this.$store.commit("user/loadUser", {id:0, username: ""});
+                this.$router.push("/login"); 
+                this.$notify({type: 'success', text: "Sesión cerrada"})
+            } catch (error) {
+                
+            }
+        }
+    }   
+</script>
 
 <style lang="scss" scoped>
     .container {
@@ -64,7 +98,7 @@
             }
 
             > .btn {
-                &.logout {
+                &.logoutin {
                     margin-left: 8px;
                 }
             }

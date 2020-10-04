@@ -9,7 +9,7 @@ class AppController extends Controller
 {
     public function view() {
         return view('welcome', [
-            "user" => Auth::check() ? Auth::user() : []
+            "user" => Auth::check() ? Auth::user() : json_encode([])
         ]);
     }
 }
