@@ -17,7 +17,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name',
+        'username',
         'email',
         'password',
     ];
@@ -40,4 +40,12 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * Encriptar de manera automatica contraseña cuando un usuario sea añadido.
+     */
+    public function setPasswordAttribute($value) {
+        if($value != "")
+            $this->attributes['password'] = bcrypt($value);
+    }
 }

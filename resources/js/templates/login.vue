@@ -1,28 +1,28 @@
 <template>
     <div class="content">
         <div class="box c-column h-center">
-            <form class="c-column">
+            <form class="c-column" @submit.prevent="(type == 'signup' ? register : login)()">
                 <font-awesome-icon icon="sign-in-alt" />
 
                 <label class="c-column">
                     <span>Nombre de usuario</span>
-                    <input type="text" />
+                    <input type="text" v-model="user.username" maxlength="60" required/>
                 </label>
 
-                <label class="c-column">
+                <label class="c-column" v-if="type == 'signup'">
                     <span>Correo electronico</span>
-                    <input type="email" />
+                    <input type="email" v-model="user.email" required/>
                 </label>
 
                 <label class="c-column">
                     <span>Contraseña</span>
-                    <input type="password" />
+                    <input type="password" v-model="user.password" required/>
                 </label>
 
-                <button class="btn" type="submit">Iniciar sesión</button>
+                <button class="btn" type="submit">Enviar</button>
             </form>
 
-            <a href="#">Crear una cuenta</a>
+            <a style="cursor:pointer" @click="type = (type == 'login' ? 'signup': 'login')">{{type == 'signup' ? 'Iniciar sesión' : 'Registrarse'}}</a>
         </div>
     </div>
 </template>
@@ -32,6 +32,33 @@
 
     @Component
     export default class IndexTemplate extends Vue {
+        
+        user: any = {}
+        type: string = "login"
+
+        async register() {
+            try {
+                await this.$http.post("/auth/register", this.user);
+                this.user = {username:"", email:"", password:""}
+                this.type = 'login';
+
+                (<any> this).$notify({
+                    title : 'Exito',
+                    text  : "Usuario registrado.",
+                    type  : "success"
+                });
+            } catch(e) {}
+        }
+
+        async login() {
+            try {
+                let {data: {user}} = await this.$http.post("/auth/login", this.user);
+                this.$store.commit("user/loadUser", user);
+                this.$router.push("/");
+            } catch (error) {
+                
+            }
+        }
     }
 </script>
 

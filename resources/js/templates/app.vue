@@ -1,5 +1,7 @@
 <template>
     <div class="container">
+        <notifications />
+
         <div class="navbar">
             <!-- Home button -->
             <router-link class="btn icon" to="/">

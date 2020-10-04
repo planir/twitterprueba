@@ -3,7 +3,7 @@
         <!-- User information -->
         <div class="box c-column h-center u-info">
             <img src="https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/10_avatar-128.png" alt="">
-            <h2>John Travolta</h2>
+            <h2>{{this.$store.state.user.username}}</h2>
             <h4 class="job">Diseñador Grafico</h4>
             <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, illo doloremque qui molestiae nisi fugit eligendi</span>
         </div>
