@@ -16,6 +16,11 @@ class Tweet extends Model
      */
     protected $fillable = ["content"];
 
+    /**
+     * Retornar los datos del creador del tweet.
+     * 
+     * @return App\Models\User
+     */
     public function user() {
         return $this->belongsTo(User::class);
     }

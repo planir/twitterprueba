@@ -35,13 +35,16 @@
         }
     })
     export default class AppTemplate extends Vue {
-        logged: boolean
+        logged!: boolean
         
         /**
-         * 
+         * Función para redireccionar a la página de iniciar sesión en caso que el usuario esté desconectado o
+         * desconectar en caso de que tenga sesión iniciada.
          */
         async logFunction() {
-            if(!this.logged) return this.$router.push("/login");
+            
+            if(!this.logged) 
+                return this.$router.push("/login");
 
             try {
                 await this.$http.post("/auth/logout");  

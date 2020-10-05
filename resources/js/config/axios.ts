@@ -8,7 +8,8 @@ import axios from "axios"
 
 axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
-// Interceptor en caso de que la petición falle o funcione.
+// Interceptor en caso de que la petición falle.
+// Esto con el fin de avisar al usuario cual fue la causa del error.
 axios.interceptors.response.use(function (response) {
     return response;
 }, function (error) {
@@ -29,9 +30,15 @@ axios.interceptors.response.use(function (response) {
             });
         }
         
+        // Si hay multiples errores en la petición
         if(data.errors) {
 
             for(let index in data.errors) {
+                /**
+                 * Errores conseguidos.
+                 * 
+                 * @var any[] errors
+                 */
                 let errors = data.errors[index];
                     
                 for(let error of errors){

@@ -1,6 +1,8 @@
 <template>
     <div class="content">
         <div class="box c-column h-center">
+
+            <!-- Formulario del inicio o registro -->
             <form class="c-column" @submit.prevent="(type == 'signup' ? register : login)()">
                 <font-awesome-icon icon="sign-in-alt" />
 
@@ -36,6 +38,9 @@
         user: any = {}
         type: string = "login"
 
+        /**
+         * Función encargada de enviar la petición para registrar al usuario.
+         */
         async register() {
             try {
                 await this.$http.post("/auth/register", this.user);
@@ -50,9 +55,13 @@
             } catch(e) {}
         }
 
+        /**
+         * Función encargada de iniciar la sesión.
+         */
         async login() {
             try {
                 let {data: {user}} = await this.$http.post("/auth/login", this.user);
+                
                 this.$store.commit("user/loadUser", user);
                 this.$router.push("/");
             } catch (error) {

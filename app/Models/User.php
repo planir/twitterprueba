@@ -49,6 +49,11 @@ class User extends Authenticatable
             $this->attributes['password'] = bcrypt($value);
     }
 
+    /**
+     * Obtener los tweets del usuario.
+     * 
+     * @return \App\Models\Tweet[]
+     */
     public function tweets() {
         return $this->hasMany(Tweet::class);
     }

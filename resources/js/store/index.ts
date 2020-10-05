@@ -7,7 +7,7 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
     modules: {
-        user: require("./user").default,
-        tweets: require("./tweets").default
+        user   : require("./user").default,
+        tweets : require("./tweets").default
     }
 });

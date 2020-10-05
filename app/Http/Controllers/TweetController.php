@@ -9,7 +9,7 @@ use Response;
 class TweetController extends Controller
 {
     /**
-     * Display a listing of the resource.
+     * Mostrar todos los tweets publicados.
      *
      * @return \Illuminate\Http\Response
      */
@@ -21,17 +21,27 @@ class TweetController extends Controller
     }
 
     /**
-     * Store a newly created resource in storage.
+     * Crear un nuevo tweet.
      *
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {
+    {  
+        /**
+         * Datos del tweet proporcionados por el usuario.
+         * 
+         * @var Array $data
+         */
         $data = $request->validate([
             "content" => "required|string|max:400"
         ]);
-
+        
+        /**
+         * Datos del tweet creado.
+         * 
+         * @var \App\Models\Tweet $tweet
+         */
         $tweet = $request->user()->tweets()->create($data);
 
         return Response::json(["status" => "success", "id" => $tweet->id]);
@@ -40,7 +50,9 @@ class TweetController extends Controller
     /**
      * Display the specified resource.
      *
+     * @param  \Illuminate\Http\Request  $request
      * @param  \App\Model\Tweet  $tweet
+     * 
      * @return \Illuminate\Http\Response
      */
     public function show(Request $request, Tweet $tweet)
@@ -49,33 +61,43 @@ class TweetController extends Controller
     }
 
     /**
-     * Update the specified resource in storage.
+     * Modificar un tweet.
      *
      * @param  \Illuminate\Http\Request  $request
      * @param  \App\Model\Tweet  $tweet
+     * 
      * @return \Illuminate\Http\Response
      */
     public function update(Request $request, Tweet $tweet)
     {
+        // Verificar si el usuario tiene permisos para modificar el tweet.
         $this->authorize('update', $tweet);
 
+        /**
+         * Nuevos datos del tweet.
+         * 
+         * @var Array $data
+         */
         $data = $request->validate([
             "content" => "required|string|max:400"
         ]);
-
+        
         $tweet->update($data);
 
         return Response::json(["status" => "sucess"]);
     }
 
     /**
-     * Remove the specified resource from storage.
+     * Eliminar un tweet.
      *
+     * @param  \Illuminate\Http\Request  $request
      * @param  \App\Model\Tweet  $tweet
+     * 
      * @return \Illuminate\Http\Response
      */
     public function destroy(Request $request, Tweet $tweet)
     {
+        // Verificar si el usuario tiene permisos para eliminar el tweet.
         $this->authorize('delete', $tweet);
 
         $tweet->delete();

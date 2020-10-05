@@ -1,3 +1,7 @@
+/**
+ * Archivo de configuración para importar los iconos necesarios para la aplicación.
+ * Esto con el fin de evitar cargarlos todos para no desmejorar el rendimiento de la aplicación.
+ */
 import Vue from 'vue'
 import { library } from '@fortawesome/fontawesome-svg-core'; 
 import { faHome } from "@fortawesome/free-solid-svg-icons/faHome";
