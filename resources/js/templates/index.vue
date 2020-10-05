@@ -11,8 +11,8 @@
         <!-- Publish tweet box -->
         <div class="box publish c-row v-center">
             <img src="https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/10_avatar-64.png" alt="">
-            <textarea resize="false" placeholder="Hola Fauce, ¿Qué estás pensando?"></textarea>
-            <div class="btn green">Publicar</div>
+            <textarea resize="false" placeholder="Hola Fauce, ¿Qué estás pensando?" v-model="content"></textarea>
+            <div class="btn green" @click="publishTweet" :disabled="loading">Publicar</div>
         </div>
 
         <!-- Caja que contiene todos los tweets publicados. -->
@@ -34,8 +34,28 @@
         }
     })
     export default class IndexTemplate extends Vue {
+        content: string = ""
+        loading: boolean = false
+
         created() {
             this.$store.dispatch("tweets/getTweets");
+        }
+
+        async publishTweet(){
+            if(this.content.length === 0 || this.loading) return;
+            this.loading = true;
+
+            let {content} = this;
+
+            try {
+                let {data} = await this.axios.post("/tweets", {content});
+                this.$store.commit("tweets/addTweet", {id: data.id , content});
+            } catch (error) {
+                
+            }
+
+            this.loading = false;
+            this.content = "";
         }
     }
 </script>

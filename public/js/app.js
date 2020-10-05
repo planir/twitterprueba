@@ -2602,6 +2602,46 @@ var autoReplace = function autoReplace() {
 
 /***/ }),
 
+/***/ "./node_modules/@fortawesome/free-solid-svg-icons/faEdit.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@fortawesome/free-solid-svg-icons/faEdit.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, '__esModule', { value: true });
+var prefix = 'fas';
+var iconName = 'edit';
+var width = 576;
+var height = 512;
+var ligatures = [];
+var unicode = 'f044';
+var svgPathData = 'M402.6 83.2l90.2 90.2c3.8 3.8 3.8 10 0 13.8L274.4 405.6l-92.8 10.3c-12.4 1.4-22.9-9.1-21.5-21.5l10.3-92.8L388.8 83.2c3.8-3.8 10-3.8 13.8 0zm162-22.9l-48.8-48.8c-15.2-15.2-39.9-15.2-55.2 0l-35.4 35.4c-3.8 3.8-3.8 10 0 13.8l90.2 90.2c3.8 3.8 10 3.8 13.8 0l35.4-35.4c15.2-15.3 15.2-40 0-55.2zM384 346.2V448H64V128h229.8c3.2 0 6.2-1.3 8.5-3.5l40-40c7.6-7.6 2.2-20.5-8.5-20.5H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V306.2c0-10.7-12.9-16-20.5-8.5l-40 40c-2.2 2.3-3.5 5.3-3.5 8.5z';
+
+exports.definition = {
+  prefix: prefix,
+  iconName: iconName,
+  icon: [
+    width,
+    height,
+    ligatures,
+    unicode,
+    svgPathData
+  ]};
+
+exports.faEdit = exports.definition;
+exports.prefix = prefix;
+exports.iconName = iconName;
+exports.width = width;
+exports.height = height;
+exports.ligatures = ligatures;
+exports.unicode = unicode;
+exports.svgPathData = svgPathData;
+
+/***/ }),
+
 /***/ "./node_modules/@fortawesome/free-solid-svg-icons/faHome.js":
 /*!******************************************************************!*\
   !*** ./node_modules/@fortawesome/free-solid-svg-icons/faHome.js ***!
@@ -2632,6 +2672,46 @@ exports.definition = {
   ]};
 
 exports.faHome = exports.definition;
+exports.prefix = prefix;
+exports.iconName = iconName;
+exports.width = width;
+exports.height = height;
+exports.ligatures = ligatures;
+exports.unicode = unicode;
+exports.svgPathData = svgPathData;
+
+/***/ }),
+
+/***/ "./node_modules/@fortawesome/free-solid-svg-icons/faSave.js":
+/*!******************************************************************!*\
+  !*** ./node_modules/@fortawesome/free-solid-svg-icons/faSave.js ***!
+  \******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, '__esModule', { value: true });
+var prefix = 'fas';
+var iconName = 'save';
+var width = 448;
+var height = 512;
+var ligatures = [];
+var unicode = 'f0c7';
+var svgPathData = 'M433.941 129.941l-83.882-83.882A48 48 0 0 0 316.118 32H48C21.49 32 0 53.49 0 80v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V163.882a48 48 0 0 0-14.059-33.941zM224 416c-35.346 0-64-28.654-64-64 0-35.346 28.654-64 64-64s64 28.654 64 64c0 35.346-28.654 64-64 64zm96-304.52V212c0 6.627-5.373 12-12 12H76c-6.627 0-12-5.373-12-12V108c0-6.627 5.373-12 12-12h228.52c3.183 0 6.235 1.264 8.485 3.515l3.48 3.48A11.996 11.996 0 0 1 320 111.48z';
+
+exports.definition = {
+  prefix: prefix,
+  iconName: iconName,
+  icon: [
+    width,
+    height,
+    ligatures,
+    unicode,
+    svgPathData
+  ]};
+
+exports.faSave = exports.definition;
 exports.prefix = prefix;
 exports.iconName = iconName;
 exports.width = width;
@@ -2752,6 +2832,86 @@ exports.definition = {
   ]};
 
 exports.faSignOutAlt = exports.definition;
+exports.prefix = prefix;
+exports.iconName = iconName;
+exports.width = width;
+exports.height = height;
+exports.ligatures = ligatures;
+exports.unicode = unicode;
+exports.svgPathData = svgPathData;
+
+/***/ }),
+
+/***/ "./node_modules/@fortawesome/free-solid-svg-icons/faTimes.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@fortawesome/free-solid-svg-icons/faTimes.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, '__esModule', { value: true });
+var prefix = 'fas';
+var iconName = 'times';
+var width = 352;
+var height = 512;
+var ligatures = [];
+var unicode = 'f00d';
+var svgPathData = 'M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z';
+
+exports.definition = {
+  prefix: prefix,
+  iconName: iconName,
+  icon: [
+    width,
+    height,
+    ligatures,
+    unicode,
+    svgPathData
+  ]};
+
+exports.faTimes = exports.definition;
+exports.prefix = prefix;
+exports.iconName = iconName;
+exports.width = width;
+exports.height = height;
+exports.ligatures = ligatures;
+exports.unicode = unicode;
+exports.svgPathData = svgPathData;
+
+/***/ }),
+
+/***/ "./node_modules/@fortawesome/free-solid-svg-icons/faTrash.js":
+/*!*******************************************************************!*\
+  !*** ./node_modules/@fortawesome/free-solid-svg-icons/faTrash.js ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, '__esModule', { value: true });
+var prefix = 'fas';
+var iconName = 'trash';
+var width = 448;
+var height = 512;
+var ligatures = [];
+var unicode = 'f1f8';
+var svgPathData = 'M432 32H312l-9.4-18.7A24 24 0 0 0 281.1 0H166.8a23.72 23.72 0 0 0-21.4 13.3L136 32H16A16 16 0 0 0 0 48v32a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V48a16 16 0 0 0-16-16zM53.2 467a48 48 0 0 0 47.9 45h245.8a48 48 0 0 0 47.9-45L416 128H32z';
+
+exports.definition = {
+  prefix: prefix,
+  iconName: iconName,
+  icon: [
+    width,
+    height,
+    ligatures,
+    unicode,
+    svgPathData
+  ]};
+
+exports.faTrash = exports.definition;
 exports.prefix = prefix;
 exports.iconName = iconName;
 exports.width = width;
@@ -5156,7 +5316,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".tweet[data-v-4627d768] {\n  margin-bottom: 14px;\n}\n.tweet > .header[data-v-4627d768] {\n  margin-bottom: 7px;\n}\n.tweet > .header > img[data-v-4627d768] {\n  margin-right: 6px;\n}\n.tweet > .header > .c-column[data-v-4627d768] {\n  justify-content: center;\n}\n.tweet > .header > .c-column > span[data-v-4627d768] {\n  font-weight: 600;\n}\n.tweet > .header > .c-column > span.name[data-v-4627d768] {\n  font-size: 18px;\n  color: #1565c0;\n}\n.tweet > .header > .c-column > span.job[data-v-4627d768] {\n  font-size: 12px;\n  color: #1e88e5;\n}\n.tweet > span[data-v-4627d768] {\n  font-size: 24px;\n  font-weight: 400;\n  color: #0d47a1;\n}", ""]);
+exports.push([module.i, ".tweet[data-v-4627d768] {\n  margin-bottom: 14px;\n}\n.tweet > .header[data-v-4627d768] {\n  margin-bottom: 7px;\n}\n.tweet > .header > img[data-v-4627d768] {\n  margin-right: 6px;\n}\n.tweet > .header > .c-column[data-v-4627d768] {\n  justify-content: center;\n}\n.tweet > .header > .c-column > span[data-v-4627d768] {\n  font-weight: 600;\n}\n.tweet > .header > .c-column > span.name[data-v-4627d768] {\n  font-size: 18px;\n  color: #1565c0;\n}\n.tweet > .header > .c-column > span.job[data-v-4627d768] {\n  font-size: 12px;\n  color: #1e88e5;\n}\n.tweet > textarea[data-v-4627d768] {\n  resize: none;\n}\n.tweet > span[data-v-4627d768], .tweet textarea[data-v-4627d768] {\n  font-size: 24px;\n  font-weight: 400;\n  color: #0d47a1;\n}\n.tweet > .actions[data-v-4627d768] {\n  margin: 6px 0;\n}\n.tweet > .actions > a[data-v-4627d768] {\n  margin-right: 14px;\n}", ""]);
 
 // exports
 
@@ -6453,6 +6613,36 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 };
 
 let TweetComponent = class TweetComponent extends vue_property_decorator__WEBPACK_IMPORTED_MODULE_0__["Vue"] {
+    constructor() {
+        super(...arguments);
+        this.editMode = false;
+        this.content = "";
+        this.previousContent = "";
+        this.updating = false;
+    }
+    created() {
+        this.content = this.data.content;
+    }
+    removeTweet() {
+        this.axios.delete("/tweets/" + this.data.id).then(() => {
+            this.$store.commit("tweets/removeTweet", this.data.id);
+        });
+    }
+    editModeC(mode) {
+        if (mode)
+            this.previousContent = this.content;
+        else {
+            this.content = this.previousContent;
+            this.previousContent = "";
+        }
+        this.editMode = mode;
+    }
+    async updateText() {
+        this.updating = true;
+        if (this.previousContent != this.content)
+            await this.axios.put("/tweets/" + this.data.id, { content: this.content });
+        this.updating = this.editMode = false;
+    }
 };
 __decorate([
     Object(vue_property_decorator__WEBPACK_IMPORTED_MODULE_0__["Prop"])({ default: {} })
@@ -6487,8 +6677,27 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 let IndexTemplate = class IndexTemplate extends vue_property_decorator__WEBPACK_IMPORTED_MODULE_0__["Vue"] {
+    constructor() {
+        super(...arguments);
+        this.content = "";
+        this.loading = false;
+    }
     created() {
         this.$store.dispatch("tweets/getTweets");
+    }
+    async publishTweet() {
+        if (this.content.length === 0 || this.loading)
+            return;
+        this.loading = true;
+        let { content } = this;
+        try {
+            let { data } = await this.axios.post("/tweets", { content });
+            this.$store.commit("tweets/addTweet", { id: data.id, content });
+        }
+        catch (error) {
+        }
+        this.loading = false;
+        this.content = "";
     }
 };
 IndexTemplate = __decorate([
@@ -7020,7 +7229,96 @@ var render = function() {
       ])
     ]),
     _vm._v(" "),
-    _c("span", { domProps: { textContent: _vm._s(_vm.data.content) } })
+    !_vm.editMode
+      ? _c("span", { domProps: { textContent: _vm._s(_vm.content) } })
+      : _c("textarea", {
+          directives: [
+            {
+              name: "model",
+              rawName: "v-model",
+              value: _vm.content,
+              expression: "content"
+            }
+          ],
+          attrs: { rows: "6" },
+          domProps: { value: _vm.content },
+          on: {
+            input: function($event) {
+              if ($event.target.composing) {
+                return
+              }
+              _vm.content = $event.target.value
+            }
+          }
+        }),
+    _vm._v(" "),
+    _vm.data.user.id === _vm.$store.state.user.id
+      ? _c(
+          "div",
+          { staticClass: "actions c-row" },
+          [
+            _vm.editMode
+              ? [
+                  _c(
+                    "a",
+                    { staticStyle: { cursor: "pointer" } },
+                    [
+                      _c("font-awesome-icon", {
+                        attrs: { icon: "save" },
+                        on: { click: _vm.updateText }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      staticStyle: { cursor: "pointer" },
+                      on: {
+                        click: function($event) {
+                          return _vm.editModeC(false)
+                        }
+                      }
+                    },
+                    [_c("font-awesome-icon", { attrs: { icon: "times" } })],
+                    1
+                  )
+                ]
+              : [
+                  _c(
+                    "a",
+                    {
+                      staticStyle: { cursor: "pointer" },
+                      on: { click: _vm.updateText }
+                    },
+                    [
+                      _c("font-awesome-icon", {
+                        attrs: { icon: "trash" },
+                        on: { click: _vm.removeTweet }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "a",
+                    {
+                      staticStyle: { cursor: "pointer" },
+                      on: {
+                        click: function($event) {
+                          return _vm.editModeC(true)
+                        }
+                      }
+                    },
+                    [_c("font-awesome-icon", { attrs: { icon: "edit" } })],
+                    1
+                  )
+                ]
+          ],
+          2
+        )
+      : _vm._e()
   ])
 }
 var staticRenderFns = []
@@ -7066,7 +7364,49 @@ var render = function() {
       ])
     ]),
     _vm._v(" "),
-    _vm._m(0),
+    _c("div", { staticClass: "box publish c-row v-center" }, [
+      _c("img", {
+        attrs: {
+          src:
+            "https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/10_avatar-64.png",
+          alt: ""
+        }
+      }),
+      _vm._v(" "),
+      _c("textarea", {
+        directives: [
+          {
+            name: "model",
+            rawName: "v-model",
+            value: _vm.content,
+            expression: "content"
+          }
+        ],
+        attrs: {
+          resize: "false",
+          placeholder: "Hola Fauce, ¿Qué estás pensando?"
+        },
+        domProps: { value: _vm.content },
+        on: {
+          input: function($event) {
+            if ($event.target.composing) {
+              return
+            }
+            _vm.content = $event.target.value
+          }
+        }
+      }),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "btn green",
+          attrs: { disabled: _vm.loading },
+          on: { click: _vm.publishTweet }
+        },
+        [_vm._v("Publicar")]
+      )
+    ]),
     _vm._v(" "),
     _c(
       "div",
@@ -7078,31 +7418,7 @@ var render = function() {
     )
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "box publish c-row v-center" }, [
-      _c("img", {
-        attrs: {
-          src:
-            "https://cdn3.iconfinder.com/data/icons/business-avatar-1/512/10_avatar-64.png",
-          alt: ""
-        }
-      }),
-      _vm._v(" "),
-      _c("textarea", {
-        attrs: {
-          resize: "false",
-          placeholder: "Hola Fauce, ¿Qué estás pensando?"
-        }
-      }),
-      _vm._v(" "),
-      _c("div", { staticClass: "btn green" }, [_vm._v("Publicar")])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -25886,7 +26202,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _fortawesome_free_solid_svg_icons_faSearch__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_free_solid_svg_icons_faSearch__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _fortawesome_free_solid_svg_icons_faSignInAlt__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons/faSignInAlt */ "./node_modules/@fortawesome/free-solid-svg-icons/faSignInAlt.js");
 /* harmony import */ var _fortawesome_free_solid_svg_icons_faSignInAlt__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_free_solid_svg_icons_faSignInAlt__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _fortawesome_vue_fontawesome__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @fortawesome/vue-fontawesome */ "./node_modules/@fortawesome/vue-fontawesome/index.es.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons_faEdit__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons/faEdit */ "./node_modules/@fortawesome/free-solid-svg-icons/faEdit.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons_faEdit__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_free_solid_svg_icons_faEdit__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _fortawesome_free_solid_svg_icons_faTrash__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons/faTrash */ "./node_modules/@fortawesome/free-solid-svg-icons/faTrash.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons_faTrash__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_free_solid_svg_icons_faTrash__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _fortawesome_free_solid_svg_icons_faTimes__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons/faTimes */ "./node_modules/@fortawesome/free-solid-svg-icons/faTimes.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons_faTimes__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_free_solid_svg_icons_faTimes__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _fortawesome_free_solid_svg_icons_faSave__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @fortawesome/free-solid-svg-icons/faSave */ "./node_modules/@fortawesome/free-solid-svg-icons/faSave.js");
+/* harmony import */ var _fortawesome_free_solid_svg_icons_faSave__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_fortawesome_free_solid_svg_icons_faSave__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _fortawesome_vue_fontawesome__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @fortawesome/vue-fontawesome */ "./node_modules/@fortawesome/vue-fontawesome/index.es.js");
+
+
+
+
 
 
 
@@ -25898,7 +26226,11 @@ _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_1__["library"].add(_f
 _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_1__["library"].add(_fortawesome_free_solid_svg_icons_faSignOutAlt__WEBPACK_IMPORTED_MODULE_3__["faSignOutAlt"]);
 _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_1__["library"].add(_fortawesome_free_solid_svg_icons_faSearch__WEBPACK_IMPORTED_MODULE_4__["faSearch"]);
 _fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_1__["library"].add(_fortawesome_free_solid_svg_icons_faSignInAlt__WEBPACK_IMPORTED_MODULE_5__["faSignInAlt"]);
-vue__WEBPACK_IMPORTED_MODULE_0__["default"].component('font-awesome-icon', _fortawesome_vue_fontawesome__WEBPACK_IMPORTED_MODULE_6__["FontAwesomeIcon"]);
+_fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_1__["library"].add(_fortawesome_free_solid_svg_icons_faTrash__WEBPACK_IMPORTED_MODULE_7__["faTrash"]);
+_fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_1__["library"].add(_fortawesome_free_solid_svg_icons_faEdit__WEBPACK_IMPORTED_MODULE_6__["faEdit"]);
+_fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_1__["library"].add(_fortawesome_free_solid_svg_icons_faTimes__WEBPACK_IMPORTED_MODULE_8__["faTimes"]);
+_fortawesome_fontawesome_svg_core__WEBPACK_IMPORTED_MODULE_1__["library"].add(_fortawesome_free_solid_svg_icons_faSave__WEBPACK_IMPORTED_MODULE_9__["faSave"]);
+vue__WEBPACK_IMPORTED_MODULE_0__["default"].component('font-awesome-icon', _fortawesome_vue_fontawesome__WEBPACK_IMPORTED_MODULE_10__["FontAwesomeIcon"]);
 
 
 /***/ }),
@@ -26023,14 +26355,16 @@ vue__WEBPACK_IMPORTED_MODULE_0__["default"].use(vuex__WEBPACK_IMPORTED_MODULE_1_
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vuex_module_decorators__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vuex-module-decorators */ "./node_modules/vuex-module-decorators/dist/esm/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var ___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ */ "./resources/js/store/index.ts");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 let Tweets = class Tweets extends vuex_module_decorators__WEBPACK_IMPORTED_MODULE_0__["VuexModule"] {
@@ -26041,14 +26375,26 @@ let Tweets = class Tweets extends vuex_module_decorators__WEBPACK_IMPORTED_MODUL
     loadTweets(data) {
         this.data = data;
     }
+    addTweet(data) {
+        this.data.unshift({ id: data.id, content: data.content, user: { id: ___WEBPACK_IMPORTED_MODULE_1__["default"].state.user.id, username: ___WEBPACK_IMPORTED_MODULE_1__["default"].state.user.username } });
+    }
+    removeTweet(id) {
+        this.data = this.data.filter(t => t.id != id);
+    }
     async getTweets() {
-        let { data } = await axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/tweets");
+        let { data } = await axios__WEBPACK_IMPORTED_MODULE_2___default.a.get("/tweets");
         return data.data;
     }
 };
 __decorate([
     vuex_module_decorators__WEBPACK_IMPORTED_MODULE_0__["Mutation"]
 ], Tweets.prototype, "loadTweets", null);
+__decorate([
+    vuex_module_decorators__WEBPACK_IMPORTED_MODULE_0__["Mutation"]
+], Tweets.prototype, "addTweet", null);
+__decorate([
+    vuex_module_decorators__WEBPACK_IMPORTED_MODULE_0__["Mutation"]
+], Tweets.prototype, "removeTweet", null);
 __decorate([
     Object(vuex_module_decorators__WEBPACK_IMPORTED_MODULE_0__["Action"])({ commit: "loadTweets" })
 ], Tweets.prototype, "getTweets", null);
